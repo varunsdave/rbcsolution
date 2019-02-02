@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es6",
+    "experimentalDecorators": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "e2e/**/*.spec.ts"
+  ],
+  "exclude": [
+    ".idea",
+    "build",
+    "node_modules",
+    "typings/globals",
+    "typings/modules",
+    "testing/*.ts"
+  ]
+}

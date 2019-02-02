@@ -1,0 +1,41 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.example-left-align {
+    text-align: right;
+}
+
+.currency-input {
+    display: flex;
+    flex-direction: row;
+}
+
+.clear-icon {
+    display: none;
+}
+
+input.example-left-align::-webkit-outer-spin-button,
+input.example-left-align::-webkit-inner-spin-button {
+    display: none;
+}
+
+input.example-left-align {
+    -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 360px) {
+    .example-left-align {
+        text-align: right;
+    }
+
+    .clear-icon {
+        display: flex;
+    }
+    .currency-input {
+        display: flex;
+        flex-direction: row;
+    }
+    
+  }

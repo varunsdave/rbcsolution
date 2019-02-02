@@ -1,0 +1,15 @@
+<h2>Get data via socket example</h2>
+<app-currency-input-form (formValues)="socketExampleSubmit($event)"></app-currency-input-form>
+<div *ngIf="socketExampleValue | async as socketCurency">
+    <p>Converted currency = {{socketCurency.convertedValue.value}}</p>
+    <p>Converion Rate calculated at = {{socketCurency.responseTime}}</p>
+</div>
+
+<br />
+<h2>Get Data via regular rest call example</h2>
+<app-currency-input-form (formValues)="restExampleSubmit($event)"></app-currency-input-form>
+
+<div *ngIf="convertedValue | async as currency">
+    <p>Converted currency = {{currency.convertedValue.value}}</p>
+    <p>Converion Rate calculated at = {{currency.responseTime}}</p>
+</div>

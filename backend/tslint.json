@@ -1,0 +1,64 @@
+{
+  "rules": {
+    "import-blacklist": [true, "rxjs", "rxjs/Rx"],
+    "private-must-be-underscore":true,
+    "class-name": true,
+    "curly": true,
+    "eofline": true,
+    "forin": true,
+    "no-eval": true,
+    "indent": [
+      true,
+      "spaces",
+      4
+    ],
+    "jsdoc-format": true,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-before-private",
+          "static-before-instance",
+          "variables-before-functions"
+        ]
+      }
+    ],
+    "member-access": [true, "check-accessor"],
+    "no-consecutive-blank-lines": [true, 2],
+    "no-duplicate-variable": true,
+    "no-use-before-declare": true,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-whitespace"
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "semicolon": [true],
+    "switch-default": true,
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "ban-keywords"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator"
+    ],
+    "no-any": true,
+    "typedef": [
+      true,
+      "call-signature",
+      "property-declaration",
+      "member-variable-declaration",
+      "parameter"
+    ]
+  }
+}

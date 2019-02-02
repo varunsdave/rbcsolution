@@ -1,0 +1,26 @@
+{
+  "swagger": {
+    "outputDirectory": "./dist",
+    "entryFile": "./src/server.ts",
+    "host": "localhost:8030",
+    "basePath": "/",
+    "securityDefinitions": {
+      "jwtPermanent": {
+        "type": "apiKey",
+        "name": "x-access-token",
+        "in": "header"
+      },
+      "jwtTemporary": {
+        "type": "apiKey",
+        "name": "x-access-token",
+        "in": "header"
+      }
+    }
+  },
+  "routes": {
+    "basePath": "/",
+    "entryFile": "./src/server.ts",
+    "routesDir": "./src",
+    "middleware": "express"
+  }
+}
